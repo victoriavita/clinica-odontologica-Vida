@@ -1,0 +1,484 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul,
+ol {
+  list-style: none;
+}
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.main__header {
+  background-color: rgb(219, 219, 219);
+  color: black;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main__header__nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px 15px;
+}
+.main__header__nav li {
+  padding-left: 20px;
+}
+.main__header__nav a {
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.main__header__nav a.active {
+  color: white;
+}
+.main__principal {
+  background-image: url(/img/parallax-textura.jpg);
+  color: black;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 100vw;
+  text-align: center;
+}
+.main__principal__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 35px;
+}
+.main__title {
+  font-family: "Roboto Condensed";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  line-height: 1.1em;
+  text-transform: none;
+  color: black;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.main__title__sub {
+  font-style: normal;
+  font-size: 1.3rem;
+  font-family: "Roboto Condensed";
+  text-align: center;
+  line-height: 2;
+  text-align: center;
+  color: #193c67;
+}
+.our__specialty {
+  background: rgb(245, 245, 249);
+  background-image: linear-gradient(
+    180deg,
+    white 0%,
+    rgb(219, 219, 219) 93%
+  );
+  width: 100vw;
+}
+.our__specialty__title__sub {
+  text-align: center;
+}
+h2 {
+  font-family: "Roboto Condensed";
+  color: #193c67;
+  font-size: 2rem;
+  padding: 15px;
+  text-align: center;
+}
+.our__specialty__wrapper {
+  padding: 30px 15px;
+}
+.our__specialty__img {
+  padding: 20px 0;
+}
+.our__specialty__img:hover {
+  transform: scale(1.1);
+  background-color: rgb(245, 245, 249);
+  border-radius: 30px;
+}
+.our__medida {
+  width: 100%;
+}
+.specialty__title__sub {
+  font-family: "Roboto Condensed";
+  text-align: center;
+}
+.main__principal__consultorio {
+  background-image: url(/img/parallax-consultorio.jpg);
+  color: black;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 100vw;
+  text-align: center;
+}
+.main__principal__consultorio__sub {
+  font-family: "Roboto Condensed";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  line-height: 1.1em;
+  text-transform: none;
+  color: black;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.main__principal__consultorio__p {
+  font-style: normal;
+  font-size: 1.3rem;
+  font-family: "Roboto Condensed";
+  text-align: center;
+  line-height: 2;
+  text-align: center;
+  color: #193c67;
+}
+.main__principal__especialidades {
+  background-image: url(/img/parallax-especialidades.jpg);
+  color: black;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 100vw;
+  text-align: center;
+}
+.main__principal__especialidades__sub {
+  font-family: "Roboto Condensed";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  line-height: 1.1em;
+  text-transform: none;
+  color: black;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.main__principal__especialidades__p {
+  font-style: normal;
+  font-size: 1.3rem;
+  font-family: "Roboto Condensed";
+  text-align: center;
+  line-height: 2;
+  text-align: center;
+  color: #193c67;
+}
+.main__principal__nosotros {
+  background-image: url(/img/parallax-nosotros.jpg);
+  color: black;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 100vw;
+  text-align: center;
+}
+.main__principal__contacto {
+  background-image: url(/img/parallax-contacto.jpg);
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+  padding: 140px 30px 50px;
+  
+  height: 30vh;
+  width: 100vw;
+}
+.main__footer {
+  background-color: rgb(219, 219, 219);
+  width: 100vw;
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("fonts/RobotoCondensed-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("fonts/RobotoCondensed-BoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("fonts/RobotoCondensed-Italic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("fonts/RobotoCondensed-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@media (min-width: 768px) {
+  .main__header {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .main__principal {
+    height: 30vh;
+  }
+  .main__title {
+    font-size: 1.4rem;
+  }
+  .main__title__sub {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .our__specialty__wrapper {
+    display: grid;
+    grid-template-areas:
+      "img01 img02"
+      "img03 img04"
+      "img05 img06";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+    padding: 70px 40px;
+  }
+  .img01 {
+    grid-area: img01;
+  }
+  .img02 {
+    grid-area: img02;
+  }
+  .img03 {
+    grid-area: img03;
+  }
+  .img04 {
+    grid-area: img04;
+  }
+  .img05 {
+    grid-area: img05;
+  }
+  .img06 {
+    grid-area: img06;
+  }
+  .main__footer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 992px) {
+  .whatsapp {
+    bottom: 40px;
+    right: 40px;
+  }
+  /* inicio estilo main header */
+  .main__header {
+    background-color: rgb(219, 219, 219);
+    color: black;
+    width: 100vw;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 200px auto;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main__header__nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: end;
+    gap: 0 20px;
+  }
+  .main__header ul {
+    font-size: 0;
+  }
+  .main__header ul li {
+    display: inline-block;
+    width: 10%;
+    position: relative;
+  }
+  .main__header ul ul {
+    display: none;
+    position: absolute;
+    background-color: rgb(219, 219, 219);
+    width: 70px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+  .main__header ul ul li {
+    display: block;
+  }
+  .main__header ul li:hover ul {
+    display: block;
+  }
+  /* fin estilo main header */
+
+  /* inicio estilo index */
+
+  .main__principal {
+    height: 50vh;
+  }
+  .main__principal__wrapper {
+    width: 60%;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .main__title {
+    font-size: 2rem;
+    letter-spacing: 0.34em;
+    line-height: 1.8em;
+  }
+
+  .main__title__sub {
+    font-size: 4rem;
+    line-height: 2;
+  }
+
+  .our__specialty__wrapper {
+    grid-template-areas:
+      "img01 img02 img03"
+      "img04 img05 img06";
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .img01 {
+    grid-area: img01;
+  }
+  .img02 {
+    grid-area: img02;
+  }
+  .img03 {
+    grid-area: img03;
+  }
+  .img04 {
+    grid-area: img04;
+  }
+  .img05 {
+    grid-area: img05;
+  }
+  .img06 {
+    grid-area: img06;
+  }
+
+  .main__principal__consultorio {
+    height: 50vh;
+  }
+  .main__principal__consultorio__sub {
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 0.34em;
+    line-height: 1.8em;
+    margin-bottom: 16px;
+  }
+  .main__principal__consultorio__p {
+    font-size: 4rem;
+    line-height: 1;
+  }
+
+  .main__especialidades {
+    background-color: rgba(28, 28, 28, 0.8);
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    margin-right: 1050px;
+    text-align: center;
+  }
+  .main__principal__especialidades {
+    height: 50vh;
+    background-attachment: fixed;
+  }
+  .main__principal__especialidades__sub {
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 0.34em;
+    line-height: 1.8em;
+    margin-bottom: 16px;
+  }
+  .main__principal__especialidades__p {
+    font-size: 4rem;
+    line-height: 1;
+  }
+  .main__principal__contacto {
+    background-image: url(/img/parallax-contacto.jpg);
+    height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    padding: 140px 30px 50px;
+    margin-bottom: 100px;
+  }
+  .main__principal__contacto__sub {
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    letter-spacing: 0.34em;
+    line-height: 1.8em;
+    text-transform: none;
+    color: black;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .main__principal__contacto__p {
+    font-style: normal;
+    font-size: 4rem;
+    font-family: "Roboto Condensed";
+    text-align: center;
+    line-height: 1;
+    text-align: center;
+    color: #193c67;
+  }
+
+  .main__principal__nosotros {
+    height: 50vh;
+  }
+  .main__principal__nosotros__sub {
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    letter-spacing: 0.34em;
+    line-height: 1.8em;
+    text-transform: none;
+    color: black;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .main__principal__nosotros__p {
+    font-style: normal;
+    font-size: 3rem;
+    font-family: "Roboto Condensed";
+    text-align: center;
+    line-height: 1;
+    text-align: center;
+    color: #193c67;
+  }
+}

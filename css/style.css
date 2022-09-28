@@ -46,7 +46,7 @@ ol {
   color: white;
 }
 .main__principal {
-  background-image: url(/img/fondoindex.jpg);
+  background-image: url(../img/parallax-index.jpg);
   color: black;
   background-size: cover;
   display: flex;

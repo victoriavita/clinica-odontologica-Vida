@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif !important; 
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif !important;
 }
 html {
   color: black;
@@ -152,7 +152,7 @@ h2 {
   text-align: center;
   color: #193c67;
 }
-.consultorio{
+.consultorio {
   text-align: center;
   line-height: 1.3;
   padding: 1rem;
@@ -194,20 +194,20 @@ h2 {
   text-align: center;
   color: #193c67;
 }
-.especialidades__principal{
+.especialidades__principal {
   padding: 1rem;
   padding-bottom: 2rem;
   line-height: 1.3;
 }
-.especialidades__principal__p{
+.especialidades__principal__p {
   line-height: 1.2;
   text-align: center;
   margin-bottom: 2rem;
 }
-.our__medida__especialidad{
+.our__medida__especialidad {
   width: 100vw;
 }
-.titulo__especialidad{
+.titulo__especialidad {
   text-align: center;
 }
 .main__principal__nosotros {
@@ -280,7 +280,7 @@ h2 {
   text-align: center;
   color: #193c67;
 }
-.contacto{
+.contacto {
   background: rgb(255, 255, 255);
   background-image: linear-gradient(
     3deg,
@@ -291,8 +291,14 @@ h2 {
   text-align: center;
   line-height: 2rem;
 }
-.maps{
+.maps {
   width: 100vw;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2;
 }
 .main__footer {
   background-color: rgb(219, 219, 219);
@@ -482,7 +488,7 @@ h2 {
     font-size: 4rem;
     line-height: 1;
   }
-  .our__consultorio__wrapper{
+  .our__consultorio__wrapper {
     display: grid;
     grid-template-areas:
       "imgc01 imgc03"
@@ -493,30 +499,30 @@ h2 {
     gap: 30px 20px;
     padding: 70px 40px;
   }
-  .imgc01{
+  .imgc01 {
     grid-area: imgc01;
   }
-  .imgc03{
+  .imgc03 {
     grid-area: imgc03;
   }
-  .imgc04{
+  .imgc04 {
     grid-area: imgc04;
   }
-  .imgc05{
+  .imgc05 {
     grid-area: imgc05;
   }
-  .imgc06{
+  .imgc06 {
     grid-area: imgc06;
   }
-  .imgc08{
+  .imgc08 {
     grid-area: imgc08;
   }
-  
-  .our__medida{
+
+  .our__medida {
     width: 500px;
     height: auto;
-}
-  .carusel{
+  }
+  .carusel {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -546,10 +552,9 @@ h2 {
     font-size: 4rem;
     line-height: 1;
   }
-  .posicion__especialidad{
-    
+  .posicion__especialidad {
   }
-  .our__medida__especialidad{
+  .our__medida__especialidad {
     width: 500px;
     height: auto;
   }
@@ -569,7 +574,7 @@ h2 {
     line-height: 1;
   }
 
-  .maps{
+  .maps {
     width: 800px;
   }
   .main__principal__nosotros {
@@ -592,10 +597,10 @@ h2 {
     text-align: center;
     padding: 2rem;
   }
-  .imagenes__nosotros{
+  .imagenes__nosotros {
     display: flex;
     flex-direction: column;
-  align-items: center;
-  padding-bottom: 2rem;
+    align-items: center;
+    padding-bottom: 2rem;
   }
 }

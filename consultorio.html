@@ -4,16 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shourtcut icon" href="./img/favicon-16x16.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shourtcut icon" href="./img/faviconnuevo.png" />
     <link rel="stylesheet" href="./css/style.css" />
-    
+ 
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Clinica Odontologica Vida</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
    
     <header id="headermain"  class="main__header">
-      <img src="./img/logo.png" alt="logo" width="100" height="100" />
+      <img src="./img/logo-sinfondo.png" alt="logo" width="100" height="100" />
       <!-- incio menu de navegacion -->
       <nav >
         
@@ -60,18 +66,56 @@
         <p>El conocimiento, la tecnología y la calidez humana conforman la misión del centro.        </p>
 </div>
 <!-- fin de informacion de la clinica -->
-<img src="./img/elcentro.jpg" alt="consultorio">
-      <img src="./img/elcentro2.jpg" alt="consultorio">
-      <img src="./img/elcentro3.jpg" alt="consultorio">
-      <img src="./img/elcentro4.jpg" alt="consultorio">
-      <img src="./img/elcentro5.jpg" alt="consultorio">
-      <img src="./img/elcentro6.jpg" alt="consultorio">
-      <img src="./img/elcentro7.jpg" alt="consultorio">
-      <img src="./img/elcentro8.jpg" alt="consultorio">
+
+
+    <div class="our__consultorio__wrapper">
+      <div class="our__consultorio__img imgc01">
+        <img class="our__medida" src="./img/elcentro.jpg" alt="consultorio">
+      </div>
+      <div class="our__consultorio__img imgc03">
+        <img class="our__medida" src="./img/elcentro3.jpg" alt="consultorio">
+      </div>
+    <div class="our__consultorio__img imgc04">
+    <img class="our__medida" src="./img/elcentro4.jpg" alt="consultorio">
+    </div>
+      <div class="our__consultorio__img imgc05">
+        <img class="our__medida" src="./img/elcentro5.jpg" alt="consultorio">
+      </div>
+      <div class="our__consultorio__img imgc06">
+        <img class="our__medida" src="./img/elcentro6.jpg" alt="consultorio">
+      </div>
+    <div class="our__consultorio__img imgc08">
+    <img class="our__medida" src="./img/elcentro8.jpg" alt="consultorio">
+    </div>
+      
+    </div>
     </header>
     
+<div class="carusel">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img  class="our__medida" src="/img/elcentro.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img  class="our__medida" src="img/elcentro5.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img  class="our__medida" src="/img/elcentro7.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
     <footer class="main__footer">
-      <img src="./img/logo.png" alt="logo" width="150" height="150"/>
+      <img src="./img/logo-sinfondo.png" alt="logo" width="150" height="150"/>
       <nav class="main__footer__sub">
         <h4><p>¿Dónde encontrarnos?</p></h4>
         <p>RECOLETA</p>
@@ -82,5 +126,7 @@
         <p>Lunes a Viernes de 9hs a 20hs</p>
       </nav>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>

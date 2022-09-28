@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shourtcut icon" href="./img/favicon-16x16.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shourtcut icon" href="./img/faviconnuevo.png" />
     <link rel="stylesheet" href="./css/style.css" />
     
     <title>Clinica Odontologica Vida</title>
@@ -13,7 +17,7 @@
   <body>
     
     <header id="headermain"  class="main__header">
-      <img src="./img/logo.png" alt="logo" width="100" height="100" />
+      <img src="./img/logo-sinfondo.png" alt="logo" width="100" height="100" />
       <!-- incio menu de navegacion -->
       <nav >
         
@@ -41,8 +45,12 @@
     
       <!-- fin menu de navegacion -->
     </header>
-    <div class="fixed">
-      <img src="./img/whatsapp.png" alt="WhatsApp" width="100" height="100">
+    <div class="whatsapp">
+      <a
+        href="https://api.whatsapp.com/send?phone=+541154506078&text=Hola%20quisiera%20realizar%20una%20consulta,%20mi%20nombre%20es%20"
+      >
+        <img src="./img/whatsapp.png" alt="WhatsApp" width="80" height="80" />
+      </a>
     </div>
     <main class="main__principal__contacto">
       <div class="main__principal__wrapper">
@@ -51,7 +59,8 @@
       </div>
     </main>
     <!-- inicio informacion de contacto -->
-    <h2>CONTACTO</h2>
+    <div class="contacto">
+      <h2>CONTACTO</h2>
     <p>La clinica se encuentra ubicada:</p>
     <p>RECOLETA</p>
       <p>Paraguay 2085</p>
@@ -61,9 +70,12 @@
       <p>Horario de atención:</p>
       <p>Lunes a Viernes </p>
         <p> 9hs a 20hs</p>
+      <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2196056758057!2d-58.399208985043835!3d-34.598607980460855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca95b1ae4d75%3A0x18e4d4cf4aba627f!2sParaguay%202085%2C%20C1121ABE%20CABA!5e0!3m2!1ses-419!2sar!4v1662439002505!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+
+    </div>
+    
 
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2196056758057!2d-58.399208985043835!3d-34.598607980460855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca95b1ae4d75%3A0x18e4d4cf4aba627f!2sParaguay%202085%2C%20C1121ABE%20CABA!5e0!3m2!1ses-419!2sar!4v1662439002505!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
         <!-- fin de informacion de contacto -->
     <form action="" id="formulario">
       <label for="name">Nombre y Apellido</label>
@@ -92,14 +104,16 @@
       <input type="button" value="no hace nada" />
     </form>
     <footer class="main__footer">
-      <img src="./img/logo.png" alt="logo" width="150" height="150"/>
-      <p>¿Dónde encontrarnos?</p>
-      <p>RECOLETA</p>
-      <p>Paraguay 2085</p>
-      <p>Buenos Aires - Argentina</p>
-      <p>WhatsApp: +54 9 11 5450-6078</p>
-      <p>Horario de atención</p>
-      <p>Lunes a Viernes de 9hs a 20hs</p>
+      <img src="./img/logo-sinfondo.png" alt="logo" width="150" height="150"/>
+      <nav class="main__footer__sub">
+        <h4><p>¿Dónde encontrarnos?</p></h4>
+        <p>RECOLETA</p>
+        <p>Paraguay 2085</p>
+        <p>Buenos Aires - Argentina</p>
+        <p>WhatsApp: +54 9 11 5450-6078</p>
+        <h4><p>Horario de atención</p></h4>
+        <p>Lunes a Viernes de 9hs a 20hs</p>
+      </nav>
     </footer>
   </body>
 </html>

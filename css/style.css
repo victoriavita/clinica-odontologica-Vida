@@ -1,9 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif !important; 
 }
 html {
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
   color: black;
 }
 a {
@@ -84,11 +84,11 @@ ol {
   color: #193c67;
 }
 .our__specialty {
-  background: rgb(245, 245, 249);
+  background: rgb(255, 255, 255);
   background-image: linear-gradient(
-    180deg,
-    rgb(219, 219, 219) 93%
-    white 0%,
+    3deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(219, 219, 219) 100%
   );
   width: 100vw;
 }
@@ -96,10 +96,10 @@ ol {
   text-align: center;
 }
 h2 {
-  font-family: "Roboto Condensed";
-  color: #193c67;
-  font-size: 2rem;
-  padding: 15px;
+  font-family: "Roboto Condensed" !important;
+  color: #193c67 !important;
+  font-size: 2rem !important;
+  padding: 15px !important;
   text-align: center;
 }
 .our__specialty__wrapper {
@@ -184,6 +184,22 @@ h2 {
   text-align: center;
   color: #193c67;
 }
+.especialidades__principal{
+  padding: 1rem;
+  padding-bottom: 2rem;
+  line-height: 1.3;
+}
+.especialidades__principal__p{
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.our__medida__especialidad{
+  width: 100vw;
+}
+.titulo__especialidad{
+  text-align: center;
+}
 .main__principal__nosotros {
   background-image: url(/img/parallax-nosotros.jpg);
   color: black;
@@ -195,19 +211,70 @@ h2 {
   width: 100vw;
   text-align: center;
 }
+.main__principal__nosotros__sub {
+  font-family: "Roboto Condensed";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  line-height: 1.1em;
+  text-transform: none;
+  color: black;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.main__principal__nosotros__p {
+  font-style: normal;
+  font-size: 1.3rem;
+  font-family: "Roboto Condensed";
+  text-align: center;
+  line-height: 2;
+  text-align: center;
+  color: #193c67;
+}
+.nosotros {
+  text-align: center;
+  line-height: 1.3;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
 .main__principal__contacto {
   background-image: url(/img/parallax-contacto.jpg);
-  
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  font-size: 2rem;
   color: black;
-  padding: 140px 30px 50px;
-  
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 30vh;
+  width: 100vw;
+  text-align: center;
+}
+.main__principal__contacto__sub {
+  font-family: "Roboto Condensed";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  line-height: 1.1em;
+  text-transform: none;
+  color: black;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.main__principal__contacto__p {
+  font-style: normal;
+  font-size: 1.3rem;
+  font-family: "Roboto Condensed";
+  text-align: center;
+  line-height: 2;
+  text-align: center;
+  color: #193c67;
+}
+.contacto{
+  text-align: center;
+  line-height: 2rem;
+}
+.maps{
   width: 100vw;
 }
 .main__footer {
@@ -339,6 +406,7 @@ h2 {
 
   .main__principal {
     height: 50vh;
+    background-attachment: fixed;
   }
   .main__principal__wrapper {
     width: 60%;
@@ -384,6 +452,7 @@ h2 {
 
   .main__principal__consultorio {
     height: 50vh;
+    background-attachment: fixed;
   }
   .main__principal__consultorio__sub {
     font-weight: 400;
@@ -396,7 +465,44 @@ h2 {
     font-size: 4rem;
     line-height: 1;
   }
-
+  .our__consultorio__wrapper{
+    display: grid;
+    grid-template-areas:
+      "imgc01 imgc03"
+      "imgc04 imgc05"
+      "imgc06 imgc08";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+    padding: 70px 40px;
+  }
+  .imgc01{
+    grid-area: imgc01;
+  }
+  .imgc03{
+    grid-area: imgc03;
+  }
+  .imgc04{
+    grid-area: imgc04;
+  }
+  .imgc05{
+    grid-area: imgc05;
+  }
+  .imgc06{
+    grid-area: imgc06;
+  }
+  .imgc08{
+    grid-area: imgc08;
+  }
+  .our__medida{
+    width: 500px;
+    height: auto;
+}
+  .carusel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
   .main__especialidades {
     background-color: rgba(28, 28, 28, 0.8);
     color: white;
@@ -422,63 +528,56 @@ h2 {
     font-size: 4rem;
     line-height: 1;
   }
+  .posicion__especialidad{
+    
+  }
+  .our__medida__especialidad{
+    width: 500px;
+    height: auto;
+  }
   .main__principal__contacto {
-    background-image: url(/img/parallax-contacto.jpg);
-    height: 200px;
+    height: 50vh;
     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    font-size: 2rem;
-    color: black;
-    padding: 140px 30px 50px;
-    margin-bottom: 100px;
   }
   .main__principal__contacto__sub {
-    font-family: "Roboto Condensed";
     font-weight: 400;
-    font-style: normal;
     font-size: 2rem;
     letter-spacing: 0.34em;
     line-height: 1.8em;
-    text-transform: none;
-    color: black;
     margin-bottom: 16px;
-    text-align: center;
   }
   .main__principal__contacto__p {
-    font-style: normal;
     font-size: 4rem;
-    font-family: "Roboto Condensed";
-    text-align: center;
     line-height: 1;
-    text-align: center;
-    color: #193c67;
   }
 
+  .maps{
+    width: 800px;
+  }
   .main__principal__nosotros {
     height: 50vh;
+    background-attachment: fixed;
   }
   .main__principal__nosotros__sub {
-    font-family: "Roboto Condensed";
     font-weight: 400;
-    font-style: normal;
     font-size: 2rem;
     letter-spacing: 0.34em;
     line-height: 1.8em;
-    text-transform: none;
-    color: black;
     margin-bottom: 16px;
-    text-align: center;
   }
   .main__principal__nosotros__p {
-    font-style: normal;
     font-size: 3rem;
-    font-family: "Roboto Condensed";
-    text-align: center;
+    line-height: 1;
+  }
+  .nosotros {
     line-height: 1;
     text-align: center;
-    color: #193c67;
+    padding: 2rem;
+  }
+  .imagenes__nosotros{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
   }
 }

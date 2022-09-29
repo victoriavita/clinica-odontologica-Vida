@@ -522,7 +522,7 @@ h2 {
     width: 500px;
     height: auto;
   }
-  .carusel {
+  .carousel {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;

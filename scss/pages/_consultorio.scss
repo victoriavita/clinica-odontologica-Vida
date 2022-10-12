@@ -56,6 +56,10 @@
     font-size: 4rem;
     line-height: 1;
   }
+  .consultorio{
+    padding: 4rem;
+    font-size: 1.5rem;
+  }
   .our__consultorio__wrapper {
     display: grid;
     grid-template-areas:
@@ -87,12 +91,14 @@
   }
 
   .our__medida {
-    width: 500px;
     height: auto;
   }
   .carousel {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+  }
+  .carousel-inner{
+    width: 500px;
   }
 }

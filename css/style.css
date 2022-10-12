@@ -48,7 +48,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Roboto Condensed", Arial, Helvetica, sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -8382,7 +8382,7 @@ textarea.form-control-lg {
     display: none !important; } }
 
 * {
-  margin: 0 !important;
+  margin: 0;
   padding: 0;
   font-family: "Roboto Condensed", Arial, Helvetica, sans-serif !important; }
 
@@ -8428,6 +8428,90 @@ ol {
 .main__header__nav a.active {
   color: white; }
 
+h2, .h2 {
+  font-family: "Roboto Condensed" !important;
+  color: #193c67 !important;
+  font-size: 2rem !important;
+  padding: 15px !important;
+  text-align: center; }
+
+.main__footer {
+  background-color: #dbdbdb;
+  width: 100vw;
+  align-items: center; }
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("fonts/RobotoCondensed-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("fonts/RobotoCondensed-BoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("fonts/RobotoCondensed-Italic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("fonts/RobotoCondensed-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@media (min-width: 768px) {
+  .main__header {
+    flex-direction: row;
+    justify-content: space-around; }
+  h3, .h3 {
+    font-size: 1.5rem; }
+  .main__footer {
+    display: flex;
+    justify-content: space-evenly; } }
+
+@media (min-width: 992px) {
+  .whatsapp {
+    bottom: 40px;
+    right: 40px; }
+  /* inicio estilo main header */
+  .main__header {
+    background-color: #dbdbdb;
+    color: black;
+    width: 100vw;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 200px auto;
+    justify-content: space-around;
+    align-items: center; }
+  .main__header__nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: end;
+    gap: 0 20px; }
+  .main__header ul {
+    font-size: 0; }
+  .main__header ul li {
+    display: inline-block;
+    width: 10%;
+    position: relative; }
+  .main__header ul ul {
+    display: none;
+    position: absolute;
+    background-color: #dbdbdb;
+    width: 70px;
+    padding-left: 15px;
+    padding-bottom: 15px; }
+  .main__header ul ul li {
+    display: block; }
+  .main__header ul li:hover ul {
+    display: block; }
+  /* fin estilo main header */ }
+
 .main__principal {
   background-image: url(../img/parallax-index.jpg);
   color: black;
@@ -8438,12 +8522,11 @@ ol {
   height: 30vh;
   width: 100vw;
   text-align: center; }
-
-.main__principal__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 35px; }
+  .main__principal__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 35px; }
 
 .main__title {
   font-family: "Roboto Condensed";
@@ -8456,36 +8539,25 @@ ol {
   color: black;
   margin-bottom: 10px;
   text-align: center; }
-
-.main__title__sub {
-  font-style: normal;
-  font-size: 1.3rem;
-  font-family: "Roboto Condensed";
-  text-align: center;
-  line-height: 2;
-  text-align: center;
-  color: #193c67; }
+  .main__title__sub {
+    font-style: normal;
+    font-size: 1.3rem;
+    font-family: "Roboto Condensed";
+    text-align: center;
+    line-height: 2;
+    text-align: center;
+    color: #193c67; }
 
 .our__specialty {
   background: white;
   background-image: linear-gradient(3deg, white 0%, #dbdbdb 100%);
   width: 100vw; }
-
-.our__specialty__title__sub {
-  text-align: center; }
-
-h2, .h2 {
-  font-family: "Roboto Condensed" !important;
-  color: #193c67 !important;
-  font-size: 2rem !important;
-  padding: 15px !important;
-  text-align: center; }
-
-.our__specialty__wrapper {
-  padding: 30px 15px; }
-
-.our__specialty__img {
-  padding: 20px 0; }
+  .our__specialty__title__sub {
+    text-align: center; }
+    .our__specialty__title__sub__wrapper {
+      padding: 30px 15px; }
+    .our__specialty__title__sub__img {
+      padding: 20px 0; }
 
 .our__specialty__img:hover {
   transform: scale(1.1);
@@ -8498,6 +8570,71 @@ h2, .h2 {
 .specialty__title__sub {
   font-family: "Roboto Condensed";
   text-align: center; }
+
+@media (min-width: 768px) {
+  .main__principal {
+    height: 30vh; }
+  .main__title {
+    font-size: 1.4rem; }
+    .main__title__sub {
+      font-size: 2rem; }
+  .our__specialty {
+    display: grid; }
+    .our__specialty__wrapper {
+      display: grid;
+      grid-template-areas: "img01 img02" "img03 img04" "img05 img06";
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px 20px;
+      padding: 70px 40px; }
+  .img01 {
+    grid-area: img01; }
+  .img02 {
+    grid-area: img02; }
+  .img03 {
+    grid-area: img03; }
+  .img04 {
+    grid-area: img04; }
+  .img05 {
+    grid-area: img05; }
+  .img06 {
+    grid-area: img06; } }
+
+@media (min-width: 992px) {
+  /* inicio estilo index */
+  .main__principal {
+    height: 50vh;
+    background-attachment: fixed; }
+    .main__principal__wrapper {
+      width: 60%;
+      overflow: hidden;
+      display: inline-block; }
+  .main__title {
+    font-size: 2rem;
+    letter-spacing: 0.34em;
+    line-height: 1.8em; }
+    .main__title__sub {
+      font-size: 4rem;
+      line-height: 2; }
+  .our__specialty {
+    display: grid; }
+    .our__specialty__wrapper {
+      display: grid;
+      grid-template-areas: "img01 img02 img03" "img04 img05 img06";
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr; }
+  .img01 {
+    grid-area: img01; }
+  .img02 {
+    grid-area: img02; }
+  .img03 {
+    grid-area: img03; }
+  .img04 {
+    grid-area: img04; }
+  .img05 {
+    grid-area: img05; }
+  .img06 {
+    grid-area: img06; } }
 
 .main__principal__consultorio {
   background-image: url(../img/parallax-consultorio.jpg);
@@ -8541,6 +8678,50 @@ h2, .h2 {
   text-align: center;
   margin-bottom: 2rem; }
 
+@media (min-width: 992px) {
+  .main__principal__consultorio {
+    height: 50vh;
+    background-attachment: fixed; }
+  .main__principal__consultorio__sub {
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 0.34em;
+    line-height: 1.8em;
+    margin-bottom: 16px; }
+  .main__principal__consultorio__p {
+    font-size: 4rem;
+    line-height: 1; }
+  .consultorio {
+    padding: 4rem;
+    font-size: 1.5rem; }
+  .our__consultorio__wrapper {
+    display: grid;
+    grid-template-areas: "imgc01 imgc03" "imgc04 imgc05" "imgc06 imgc08";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+    padding: 70px 40px; }
+  .imgc01 {
+    grid-area: imgc01; }
+  .imgc03 {
+    grid-area: imgc03; }
+  .imgc04 {
+    grid-area: imgc04; }
+  .imgc05 {
+    grid-area: imgc05; }
+  .imgc06 {
+    grid-area: imgc06; }
+  .imgc08 {
+    grid-area: imgc08; }
+  .our__medida {
+    height: auto; }
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+  .carousel-inner {
+    width: 500px; } }
+
 .main__principal__especialidades {
   background-image: url(../img/parallax-especialidades.jpg);
   color: black;
@@ -8551,43 +8732,138 @@ h2, .h2 {
   height: 30vh;
   width: 100vw;
   text-align: center; }
-
-.main__principal__especialidades__sub {
-  font-family: "Roboto Condensed";
-  font-weight: 500;
-  font-style: normal;
-  font-size: 0.8rem;
-  letter-spacing: 0.2em;
-  line-height: 1.1em;
-  text-transform: none;
-  color: black;
-  margin-bottom: 10px;
-  text-align: center; }
-
-.main__principal__especialidades__p {
-  font-style: normal;
-  font-size: 1.3rem;
-  font-family: "Roboto Condensed";
-  text-align: center;
-  line-height: 2;
-  text-align: center;
-  color: #193c67; }
+  .main__principal__especialidades__sub {
+    font-family: "Roboto Condensed";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    line-height: 1.1em;
+    text-transform: none;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center; }
+  .main__principal__especialidades__p {
+    font-style: normal;
+    font-size: 1.3rem;
+    font-family: "Roboto Condensed";
+    text-align: center;
+    line-height: 2;
+    text-align: center;
+    color: #193c67; }
 
 .especialidades__principal {
   padding: 1rem;
   padding-bottom: 2rem;
   line-height: 1.3; }
-
-.especialidades__principal__p {
-  line-height: 1.2;
-  text-align: center;
-  margin-bottom: 2rem; }
+  .especialidades__principal__p {
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 2rem; }
 
 .our__medida__especialidad {
   width: 100vw; }
 
 .titulo__especialidad {
   text-align: center; }
+
+.desc {
+  margin-bottom: 1rem; }
+
+@media (min-width: 992px) {
+  .main__especialidades {
+    background-color: rgba(28, 28, 28, 0.8);
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    margin-right: 1050px;
+    text-align: center; }
+  .main__principal__especialidades {
+    height: 50vh;
+    background-attachment: fixed; }
+    .main__principal__especialidades__sub {
+      font-weight: 400;
+      font-size: 2rem;
+      letter-spacing: 0.34em;
+      line-height: 1.8em;
+      margin-bottom: 16px; }
+    .main__principal__especialidades__p {
+      font-size: 4rem;
+      line-height: 1; }
+  .especialidades__descripcion {
+    margin: 0em 5em 0em 5em;
+    text-align: center; }
+  .titulo__especialidad {
+    font-size: 2rem; }
+  .especialidad__ort {
+    display: grid;
+    grid-template-areas: "desc imge01";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 2rem;
+    margin: 2rem; }
+  .desc {
+    grid-area: desc;
+    font-size: 1.2rem;
+    line-height: 1.2em; }
+  .imge01 {
+    grid-area: imge01; }
+  .especialidad__endo {
+    display: grid;
+    grid-template-areas: "desc imge02";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 2rem;
+    margin: 2rem; }
+  .imge02 {
+    grid-area: imge02; }
+  .especialidad__ciru {
+    display: grid;
+    grid-template-areas: "desc imge03";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 2rem;
+    margin: 2rem; }
+  .imge03 {
+    grid-area: imge03; }
+  .especialidad__odonto {
+    display: grid;
+    grid-template-areas: "desc imge04";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 2rem;
+    margin: 2rem; }
+  .imge04 {
+    grid-area: imge04; }
+  .especialidad__perio {
+    display: grid;
+    grid-template-areas: "desc imge05";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 2rem;
+    margin: 2rem; }
+  .imge05 {
+    grid-area: imge05; }
+  .especialidad__blanq {
+    display: grid;
+    grid-template-areas: "desc imge06";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 2rem;
+    margin: 2rem; }
+  .imge06 {
+    grid-area: imge06; }
+  .our__medida__especialidad {
+    width: 500px;
+    height: auto; } }
 
 .main__principal__nosotros {
   background-image: url(../img/parallax-nosotros.jpg);
@@ -8626,6 +8902,44 @@ h2, .h2 {
   line-height: 1.3;
   padding: 1rem;
   margin-bottom: 2rem; }
+
+.imagenes__nosotros__img {
+  width: 90vw;
+  height: auto;
+  padding-bottom: 2rem;
+  margin: 1rem; }
+
+@media (min-width: 992px) {
+  .main__principal__nosotros {
+    height: 50vh;
+    background-attachment: fixed; }
+  .main__principal__nosotros__sub {
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 0.34em;
+    line-height: 1.8em;
+    margin-bottom: 16px; }
+  .main__principal__nosotros__p {
+    font-size: 3rem;
+    line-height: 1; }
+  .nosotros {
+    line-height: 1;
+    text-align: center;
+    padding: 2rem; }
+  .imagenes__nosotros {
+    display: grid;
+    grid-template-areas: "nosotros01 nosotros02";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 2rem; }
+  .nosotros01 {
+    grid-area: nosotros01;
+    width: 500px;
+    height: 298px; }
+  .nosotros02 {
+    grid-area: nosotros02;
+    width: 500px;
+    height: 298px; } }
 
 .main__principal__contacto {
   background-image: url(../img/parallax-contacto.jpg);
@@ -8675,203 +8989,7 @@ h2, .h2 {
   align-items: center;
   line-height: 2; }
 
-.main__footer {
-  background-color: #dbdbdb;
-  width: 100vw; }
-
-@font-face {
-  font-family: "Roboto Condensed";
-  src: url("fonts/RobotoCondensed-Bold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "Roboto Condensed";
-  src: url("fonts/RobotoCondensed-BoldItalic.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "Roboto Condensed";
-  src: url("fonts/RobotoCondensed-Italic.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "Roboto Condensed";
-  src: url("fonts/RobotoCondensed-Light.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@media (min-width: 768px) {
-  .main__header {
-    flex-direction: row;
-    justify-content: space-around; }
-  .main__principal {
-    height: 30vh; }
-  .main__title {
-    font-size: 1.4rem; }
-  .main__title__sub {
-    font-size: 2rem; }
-  h3, .h3 {
-    font-size: 1.5rem; }
-  .our__specialty__wrapper {
-    display: grid;
-    grid-template-areas: "img01 img02"
- "img03 img04"
- "img05 img06";
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px 20px;
-    padding: 70px 40px; }
-  .img01 {
-    grid-area: img01; }
-  .img02 {
-    grid-area: img02; }
-  .img03 {
-    grid-area: img03; }
-  .img04 {
-    grid-area: img04; }
-  .img05 {
-    grid-area: img05; }
-  .img06 {
-    grid-area: img06; }
-  .main__footer {
-    display: flex;
-    justify-content: space-evenly; } }
-
 @media (min-width: 992px) {
-  .whatsapp {
-    bottom: 40px;
-    right: 40px; }
-  /* inicio estilo main header */
-  .main__header {
-    background-color: #dbdbdb;
-    color: black;
-    width: 100vw;
-    height: 100px;
-    display: grid;
-    grid-template-columns: 200px auto;
-    justify-content: space-around;
-    align-items: center; }
-  .main__header__nav {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: end;
-    gap: 0 20px; }
-  .main__header ul {
-    font-size: 0; }
-  .main__header ul li {
-    display: inline-block;
-    width: 10%;
-    position: relative; }
-  .main__header ul ul {
-    display: none;
-    position: absolute;
-    background-color: #dbdbdb;
-    width: 70px;
-    padding-left: 15px;
-    padding-bottom: 15px; }
-  .main__header ul ul li {
-    display: block; }
-  .main__header ul li:hover ul {
-    display: block; }
-  /* fin estilo main header */
-  /* inicio estilo index */
-  .main__principal {
-    height: 50vh;
-    background-attachment: fixed; }
-  .main__principal__wrapper {
-    width: 60%;
-    overflow: hidden;
-    display: inline-block; }
-  .main__title {
-    font-size: 2rem;
-    letter-spacing: 0.34em;
-    line-height: 1.8em; }
-  .main__title__sub {
-    font-size: 4rem;
-    line-height: 2; }
-  .our__specialty__wrapper {
-    grid-template-areas: "img01 img02 img03"
- "img04 img05 img06";
-    grid-template-columns: repeat(3, 1fr); }
-  .img01 {
-    grid-area: img01; }
-  .img02 {
-    grid-area: img02; }
-  .img03 {
-    grid-area: img03; }
-  .img04 {
-    grid-area: img04; }
-  .img05 {
-    grid-area: img05; }
-  .img06 {
-    grid-area: img06; }
-  .main__principal__consultorio {
-    height: 50vh;
-    background-attachment: fixed; }
-  .main__principal__consultorio__sub {
-    font-weight: 400;
-    font-size: 2rem;
-    letter-spacing: 0.34em;
-    line-height: 1.8em;
-    margin-bottom: 16px; }
-  .main__principal__consultorio__p {
-    font-size: 4rem;
-    line-height: 1; }
-  .our__consultorio__wrapper {
-    display: grid;
-    grid-template-areas: "imgc01 imgc03"
- "imgc04 imgc05"
- "imgc06 imgc08";
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px 20px;
-    padding: 70px 40px; }
-  .imgc01 {
-    grid-area: imgc01; }
-  .imgc03 {
-    grid-area: imgc03; }
-  .imgc04 {
-    grid-area: imgc04; }
-  .imgc05 {
-    grid-area: imgc05; }
-  .imgc06 {
-    grid-area: imgc06; }
-  .imgc08 {
-    grid-area: imgc08; }
-  .our__medida {
-    width: 500px;
-    height: auto; }
-  .carousel {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; }
-  .main__especialidades {
-    background-color: rgba(28, 28, 28, 0.8);
-    color: white;
-    border: 1px solid white;
-    border-radius: 10px;
-    padding: 10px 15px;
-    margin-left: 10px;
-    margin-right: 1050px;
-    text-align: center; }
-  .main__principal__especialidades {
-    height: 50vh;
-    background-attachment: fixed; }
-  .main__principal__especialidades__sub {
-    font-weight: 400;
-    font-size: 2rem;
-    letter-spacing: 0.34em;
-    line-height: 1.8em;
-    margin-bottom: 16px; }
-  .main__principal__especialidades__p {
-    font-size: 4rem;
-    line-height: 1; }
-  .our__medida__especialidad {
-    width: 500px;
-    height: auto; }
   .main__principal__contacto {
     height: 50vh;
     background-attachment: fixed; }
@@ -8885,25 +9003,4 @@ h2, .h2 {
     font-size: 4rem;
     line-height: 1; }
   .maps {
-    width: 800px; }
-  .main__principal__nosotros {
-    height: 50vh;
-    background-attachment: fixed; }
-  .main__principal__nosotros__sub {
-    font-weight: 400;
-    font-size: 2rem;
-    letter-spacing: 0.34em;
-    line-height: 1.8em;
-    margin-bottom: 16px; }
-  .main__principal__nosotros__p {
-    font-size: 3rem;
-    line-height: 1; }
-  .nosotros {
-    line-height: 1;
-    text-align: center;
-    padding: 2rem; }
-  .imagenes__nosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 2rem; } }
+    width: 800px; } }

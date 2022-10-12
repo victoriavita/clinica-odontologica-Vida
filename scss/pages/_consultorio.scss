@@ -8,27 +8,27 @@
   height: 30vh;
   width: 100vw;
   text-align: center;
-}
-.main__principal__consultorio__sub {
-  font-family: "Roboto Condensed";
-  font-weight: 500;
-  font-style: normal;
-  font-size: 0.8rem;
-  letter-spacing: 0.2em;
-  line-height: 1.1em;
-  text-transform: none;
-  color: black;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.main__principal__consultorio__p {
-  font-style: normal;
-  font-size: 1.3rem;
-  font-family: "Roboto Condensed";
-  text-align: center;
-  line-height: 2;
-  text-align: center;
-  color: #193c67;
+  &__consultorio__sub {
+    font-family: "Roboto Condensed";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    line-height: 1.1em;
+    text-transform: none;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+    &__p {
+      font-style: normal;
+      font-size: 1.3rem;
+      font-family: "Roboto Condensed";
+      text-align: center;
+      line-height: 2;
+      text-align: center;
+      color: #193c67;
+    }
+  }
 }
 .consultorio {
   text-align: center;
@@ -44,17 +44,17 @@
   .main__principal__consultorio {
     height: 50vh;
     background-attachment: fixed;
-  }
-  .main__principal__consultorio__sub {
-    font-weight: 400;
-    font-size: 2rem;
-    letter-spacing: 0.34em;
-    line-height: 1.8em;
-    margin-bottom: 16px;
-  }
-  .main__principal__consultorio__p {
-    font-size: 4rem;
-    line-height: 1;
+    &__sub {
+      font-weight: 400;
+      font-size: 2rem;
+      letter-spacing: 0.34em;
+      line-height: 1.8em;
+      margin-bottom: 16px;
+    }
+    &__p {
+      font-size: 4rem;
+      line-height: 1;
+    }
   }
   .consultorio{
     padding: 4rem;

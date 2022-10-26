@@ -8949,6 +8949,12 @@ p {
   .img__nosotros__tamaño {
     width: 100vw; }
 
+@media (min-width: 768px) {
+  .img__nosotros {
+    justify-content: center; }
+    .img__nosotros__tamaño {
+      width: auto; } }
+
 @media (min-width: 992px) {
   .main__principal__nosotros {
     height: 50vh;
@@ -9005,34 +9011,39 @@ p {
     text-align: center;
     color: #193c67; }
 
+.fondo__contacto {
+  background-color: #dbdbdb;
+  width: 100vw; }
+
 .contacto {
-  background: white;
-  background-image: linear-gradient(3deg, white 0%, #dbdbdb 100%);
-  width: 100vw;
-  text-align: center;
-  line-height: 2rem; }
+  display: flex; }
+  .contacto__datos {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem; }
+
+.contacto__sub {
+  text-align: left; }
 
 .maps {
   width: 100vw; }
 
-.formulario {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 2; }
-
-@media (min-width: 992px) {
-  .datos {
+@media (min-width: 768px) {
+  .contacto {
     display: grid; }
-  .datos__formulario {
-    display: grid;
-    grid-template-areas: "contac formu";
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr; }
+    .contacto__datos {
+      display: grid;
+      grid-template-areas: "contac formu";
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      margin: 5rem; }
   .contac {
     grid-area: contac; }
   .formu {
-    grid-area: formu; }
+    grid-area: formu; } }
+
+@media (min-width: 992px) {
   .main__principal__contacto {
     height: 50vh;
     background-attachment: fixed; }
@@ -9044,6 +9055,4 @@ p {
       margin-bottom: 16px; }
     .main__principal__contacto__p {
       font-size: 4rem;
-      line-height: 1; }
-  .maps {
-    width: 800px; } }
+      line-height: 1; } }

@@ -1,3 +1,4 @@
+// inicio de parallax
 .main__principal__contacto {
   background-image: url(../img/parallax-contacto.jpg);
   color: black;
@@ -30,36 +31,43 @@
     color: #193c67;
   }
 }
-.contacto {
-  background: rgb(255, 255, 255);
-  background-image: linear-gradient(
-    3deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgb(219, 219, 219) 100%
-  );
+// fin de parallax
+// inicio de contacto
+.fondo__contacto{
+  background-color:  rgb(219, 219, 219);
   width: 100vw;
-  text-align: center;
-  line-height: 2rem;
 }
+// inicio de info contacto y formulario
+.contacto{
+  display: flex;
+  &__datos{
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem;
+  }
+}
+.contacto__sub {
+  text-align: left;
+}
+// fin de info contacto y formulario
+// inicio de maps
 .maps {
   width: 100vw;
 }
-.formulario {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 2;
-}
-@media (min-width: 992px) {
-  .datos{
+// fin de maps
+@media (min-width: 768px) {
+  // inicio de info contacto y formulario
+  .contacto{
     display: grid;
-  }
-  .datos__formulario{
-    display: grid;
-    grid-template-areas: 
-    "contac formu";
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    &__datos{
+      display: grid;
+      grid-template-areas:
+      "contac formu";
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      margin: 5rem;
+    }
   }
   .contac{
     grid-area: contac;
@@ -67,6 +75,10 @@
   .formu{
     grid-area: formu;
   }
+  // fin de info contacto y formulario
+}
+@media (min-width: 992px) {
+  // incio de parallax
   .main__principal__contacto {
     height: 50vh;
     background-attachment: fixed;
@@ -82,7 +94,5 @@
       line-height: 1;
     }
   }
-  .maps {
-    width: 800px;
-  }
+  // fin de parallax
 }

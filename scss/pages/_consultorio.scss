@@ -1,3 +1,4 @@
+// inicio de parallax
 .main__principal__consultorio {
   background-image: url(../img/parallax-consultorio.jpg);
   color: black;
@@ -30,17 +31,27 @@
     }
   }
 }
+// fin de parallax
+// inicio de info clinica
+.clinica{
+  background-color: rgb(219, 219, 219);
+  width: 100vw;
+}
 .consultorio {
   text-align: center;
   line-height: 1.3;
   padding: 1rem;
   margin-bottom: 2rem;
 }
+// fin de info clinica
+// inicio de carousel
 .carousel-item {
   text-align: center;
   margin-bottom: 2rem;
 }
+// fin de carousel
 @media (min-width: 992px) {
+  // inicio de parallax
   .main__principal__consultorio {
     height: 50vh;
     background-attachment: fixed;
@@ -56,49 +67,11 @@
       line-height: 1;
     }
   }
+  // fin de parallax
+  // inicio info clinica
   .consultorio{
     padding: 4rem;
     font-size: 1.5rem;
   }
-  .our__consultorio__wrapper {
-    display: grid;
-    grid-template-areas:
-      "imgc01 imgc03"
-      "imgc04 imgc05"
-      "imgc06 imgc08";
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px 20px;
-    padding: 70px 40px;
-  }
-  .imgc01 {
-    grid-area: imgc01;
-  }
-  .imgc03 {
-    grid-area: imgc03;
-  }
-  .imgc04 {
-    grid-area: imgc04;
-  }
-  .imgc05 {
-    grid-area: imgc05;
-  }
-  .imgc06 {
-    grid-area: imgc06;
-  }
-  .imgc08 {
-    grid-area: imgc08;
-  }
-
-  .our__medida {
-    height: auto;
-  }
-  .carousel {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .carousel-inner{
-    width: 500px;
-  }
+  // fin de info consultorio
 }

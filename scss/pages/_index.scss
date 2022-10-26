@@ -1,3 +1,4 @@
+// inicio de contenido principal
 .main__principal {
   background-image: url(../img/parallax-index.jpg);
   color: black;
@@ -36,6 +37,8 @@
     color: #193c67;
   }
 }
+// fin de contenido principal
+// inicio de especialidades
 .our__specialty {
   background: rgb(255, 255, 255);
   background-image: linear-gradient(
@@ -66,7 +69,60 @@
   font-family: "Roboto Condensed";
   text-align: center;
 }
+// fin de especialidades
+// inicio de nuestro equipo
+.nuestro__equipo {
+  width: 100vw;
+  padding-top: 7rem;
+}
+.nuestro__equipo__titulo {
+  background-color: rgb(219, 219, 219);
+}
+.profesionales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+// fin de nuestro equipo
+// inicio de testimonios
+.comentarios {
+  background-image: url(../img/fondocomentario.jpg);
+  margin-bottom: 30px;
+  &__testimonios {
+    text-align: center;
+  }
+  &__carousel {
+    justify-content: center;
+  }
+}
+// fin de testimonios
+// inicio de visitanos
+.visitanos {
+  background-color: rgb(219, 219, 219);
+  display: flex;
+  &__index {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+  }
+  .visitanos__img__tamaño {
+    width: 100%;
+  }
+}
+.visitanos__titulo__turno {
+  background-color: rgb(219, 219, 219);
+  border: 1px solid black;
+  background-color: #d6d6d7;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin-left: 20px;
+}
+// fin de visitarnos
 @media (min-width: 768px) {
+  // inicio de contenido principal
   .main__principal {
     height: 30vh;
   }
@@ -76,7 +132,9 @@
       font-size: 2rem;
     }
   }
-  .our__specialty{
+  // fin de contenido principal
+  // inicio de especialidades
+  .our__specialty {
     display: grid;
     &__wrapper {
       display: grid;
@@ -108,58 +166,94 @@
   .img06 {
     grid-area: img06;
   }
+  // fin de especialidades
+  // incio de visitanos
+  .visitanos {
+    display: flex;
+    &__index {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 2rem;
+      margin-left: 10%;
+      gap: 1rem;
+    }
+  }
+  // fin de visitanos
 }
-@media (min-width: 992px){
-        /* inicio estilo index */
-  
-        .main__principal {
-            height: 50vh;
-            background-attachment: fixed;
-            &__wrapper {
-              width: 60%;
-              overflow: hidden;
-              display: inline-block;
-            }
-          }
-          .main__title {
-            font-size: 2rem;
-            letter-spacing: 0.34em;
-            line-height: 1.8em;
-            &__sub {
-              font-size: 4rem;
-              line-height: 2;
-            }
-          }
-          .our__specialty{
-          display: grid;
-          &__wrapper {
-            display: grid;
-            grid-template-areas:
-              "img01 img02 img03"
-              "img04 img05 img06";
-            grid-template-rows: 1fr 1fr;
-            grid-template-columns: 1fr 1fr 1fr;
-          }
-          }
-          .img01 {
-            grid-area: img01;
-          }
-          .img02 {
-            grid-area: img02;
-          }
-          .img03 {
-            grid-area: img03;
-          }
-          .img04 {
-            grid-area: img04;
-          }
-          .img05 {
-            grid-area: img05;
-          }
-          .img06 {
-            grid-area: img06;
-          }
-         
-       
-        //   fin estilo index
+@media (min-width: 992px) {
+  // inicio de contenido principal
+  .main__principal {
+    height: 50vh;
+    background-attachment: fixed;
+    &__wrapper {
+      width: 60%;
+      overflow: hidden;
+      display: inline-block;
+    }
+  }
+  .main__title {
+    font-size: 2rem;
+    letter-spacing: 0.34em;
+    line-height: 1.8em;
+    &__sub {
+      font-size: 4rem;
+      line-height: 2;
+    }
+  }
+  // fin de contenido principal
+  .our__specialty {
+    display: grid;
+    &__wrapper {
+      display: grid;
+      grid-template-areas:
+        "img01 img02 img03"
+        "img04 img05 img06";
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  .img01 {
+    grid-area: img01;
+  }
+  .img02 {
+    grid-area: img02;
+  }
+  .img03 {
+    grid-area: img03;
+  }
+  .img04 {
+    grid-area: img04;
+  }
+  .img05 {
+    grid-area: img05;
+  }
+  .img06 {
+    grid-area: img06;
+  } 
+  .our__medida {
+    height: auto;
+  }
+  // fin de especialidades
+  // inicio de nuestro equipo
+  .profesionales {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  // fin de nuestro equipo
+  // inicio de testimonios
+  .comentarios {
+    margin: 40px;
+  }
+  // fin de testimonios
+  // inciio de visitanos
+  .visitanos {
+    background-color: rgb(219, 219, 219);
+    width: 100vw;
+    &__index {
+      margin-left: 30%;
+      gap: 8rem;
+    }
+  }
+  // fin de visitanos
 }

@@ -4,46 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="plan integral de procemientos odontologicos">
-    <meta name="keywords" content="plan integral, procedimiento odontologico, rehabilitacion, nosotros, equipo odontologico ">
+    <meta name="description" content="plan integral de procemientos odontologicos"/>
+    <meta name="keywords" content="plan integral, procedimiento odontologico, rehabilitacion, nosotros, equipo odontologico "/>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link rel="shourtcut icon" href="./img/faviconnuevo.png" />
     <link rel="stylesheet" href="./css/style.css" />
 
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     <title>Nosotros - Clinica Odontologica Vida</title>
-    <link rel="stylesheet" href="./css/style.css" />
   </head>
-
   <body>
-    <header id="headermain" class="main__header">
-      <a href="./index.html">
-        <img src="./img/logo-sinfondo.png" alt="logo" width="100" height="100" />
-      </a>
-      <!-- incio menu de navegacion -->
-      <nav>
-        <ul class="main__header__nav">
-          <li>
-            <a href="./index.html">HOME</a>
-          </li>
-          <li>
-            <a href="./consultorio.html">CONSULTORIO</a>
-          </li>
-          <li>
-            <a href="./especialidades.html">ESPECIALIDADES</a>
-          </li>
-          <li>
-            <a href="./nosotros.html">NOSOTROS</a>
-          </li>
-          <li>
-            <a href="./contacto.html">CONTACTO</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- fin menu de navegacion -->
-    </header>
+        <!-- inicio nav bar -->
+        <nav class="navbar navbar-expand-lg" style="background-color: #d6d6d7">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"
+              ><img
+                src="./img/logo-sinfondogrande.png"
+                alt="logo"
+                width="180"
+                height="80"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-3 me-auto mb-2 mb-lg-0 m-lg-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./consultorio.html">CONSULTORIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./especialidades.html"
+                    >ESPECIALIDADES</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- fin nav bar -->
     <!-- incio de whatsapp -->
     <div class="whatsapp">
       <a
@@ -63,20 +86,14 @@
       </div>
     </main>
     <!-- fin de parallax nosotros -->
+  <section class="nosotros__fondo">
 
     <!-- inicio informacion de nosotros -->
     <div class="nosotros">
       <h2>NOSOTROS</h2>
-
-      <p>
-        El Director del Centro y su equipo de profesionales obran bajo el nuevo
-        concepto de atención odontológica: PLAINPRO
-      </p>
-      <p>
-        Este PLAN INTEGRAL DE PROCEDIMIENTOS ODONTOLÓGICOS, es un sistema de
-        atención odontológica creado por el Director de Clinica Odontologica
-        Vida
-      </p>
+      <p> El Director del Centro y su equipo de profesionales obran bajo el nuevo
+        concepto de atención odontológica: PLAINPRO</p>
+      <p>Este PLAN INTEGRAL DE PROCEDIMIENTOS ODONTOLÓGICOS, es un sistema de atención odontológica creado por el Director de Clinica Odontologica Vida</p>
       <p>
         Para el paciente, es sencillo. Sólo es necesario asistir a la primera
         consulta con sus estudios radiográficos completos. En esa misma sesión,
@@ -106,24 +123,39 @@
         Director y su Equipo de profesionales.
       </p>
     </div>
-      <div class="imagenes__nosotros">
-        <img class="imagenes__nosotros__img nosotros01" src="./img/nosotros.jpg" alt="nosotros" />
-        <img class="imagenes__nosotros__img nosotros02" src="./img/nosotros2.jpg" alt="nosotros" />
+        <!-- fin de informacion de nosotros -->
+        <!-- inicio img de nosotros -->
+    <div class="img__nosotros">
+      <div class="img__nosotros__orden">
+        <img class="img__nosotros__tamaño" src="./img/nosotros.jpg" alt="nosotros">
+        <img class="img__nosotros__tamaño" src="./img/nosotros2.jpg" alt="nosotros">
       </div>
-    <!-- fin de informacion de nosotros -->
+    </div>
+    <!-- fin de img nosotros -->
+  </section>
+
     <!-- incio de footer -->
     <footer class="main__footer">
       <img src="./img/logo-sinfondo.png" alt="logo" width="150" height="150" />
-      <nav class="main__footer__sub">
-        <h4><p>¿Dónde encontrarnos?</p></h4>
-        <p>RECOLETA</p>
-        <p>Paraguay 2085</p>
-        <p>Buenos Aires - Argentina</p>
-        <p>WhatsApp: +54 9 11 5450-6078</p>
-        <h4><p>Horario de atención</p></h4>
-        <p>Lunes a Viernes de 9hs a 20hs</p>
-      </nav>
+      <img src="./img/logosfootersinfondo.png" alt="logo insta face whatsapp">
+      <div class="main__footer__sub">
+        <h4 class="main__footer__sub__titulo">¿Dónde encontrarnos?</h4>
+          <div class="main__footer__sub__info">
+            <p>RECOLETA</p>
+            <p>Paraguay 2085</p>
+            <p>Buenos Aires - Argentina</p>
+            <p>WhatsApp: +54 9 11 5450-6078</p>
+            <h4>Horario de atención</h4>
+            <p>Lunes a Viernes de 9hs a 20hs</p>
+          </div>
+      </div>
     </footer>
     <!-- fin de footer -->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

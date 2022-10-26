@@ -7,8 +7,8 @@ html {
   color: black;
 }
 a {
-  text-decoration: none;
-  color: black;
+  text-decoration: none !important;
+  color: black !important;
 }
 ul,
 ol {
@@ -18,6 +18,9 @@ ol {
   position: fixed;
   bottom: 20px;
   right: 20px;
+}
+.navbar-expand-lg{
+  width: 100vw;
 }
 .main__header {
   background-color: rgb(219, 219, 219);
@@ -45,6 +48,9 @@ ol {
 .main__header__nav a.active {
   color: white;
 }
+h1{
+  font-family: "Roboto Condensed" !important;
+}
 h2 {
   font-family: "Roboto Condensed" !important;
   color: #193c67 !important;
@@ -52,10 +58,34 @@ h2 {
   padding: 15px !important;
   text-align: center;
 }
+h3{
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    text-decoration-line: none;
+}
+p{
+  font-family: "Roboto Condensed" !important;
+}
 .main__footer {
+  display: flex;
+  flex-direction: column;
   background-color: rgb(219, 219, 219);
+  border-color: rgb(98, 97, 97);
+  border-style: solid;
+  border-width: 4px 0px 0px 0px;
   width: 100vw;
-  align-items: center;
+  align-items: flex-start;
+}
+.main__footer__sub{
+  color: black;
+  &__titulo{
+    color: #193c67;
+  }
+  &__info{
+    font-size: 1rem;
+    line-height: 1rem;
+  }
 }
 @font-face {
   font-family: "Roboto Condensed";
@@ -91,52 +121,13 @@ h2 {
   }
   .main__footer {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
+    }
   }
-}
 @media (min-width: 992px) {
     .whatsapp {
         bottom: 40px;
         right: 40px;
       }
-      /* inicio estilo main header */
-      .main__header {
-        background-color: rgb(219, 219, 219);
-        color: black;
-        width: 100vw;
-        height: 100px;
-        display: grid;
-        grid-template-columns: 200px auto;
-        justify-content: space-around;
-        align-items: center;
-      }
-      .main__header__nav {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        justify-content: end;
-        gap: 0 20px;
-      }
-      .main__header ul {
-        font-size: 0;
-      }
-      .main__header ul li {
-        display: inline-block;
-        width: 10%;
-        position: relative;
-      }
-      .main__header ul ul {
-        display: none;
-        position: absolute;
-        background-color: rgb(219, 219, 219);
-        width: 70px;
-        padding-left: 15px;
-        padding-bottom: 15px;
-      }
-      .main__header ul ul li {
-        display: block;
-      }
-      .main__header ul li:hover ul {
-        display: block;
-      }
-      /* fin estilo main header */
 }

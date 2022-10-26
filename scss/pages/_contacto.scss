@@ -51,6 +51,22 @@
   line-height: 2;
 }
 @media (min-width: 992px) {
+  .datos{
+    display: grid;
+  }
+  .datos__formulario{
+    display: grid;
+    grid-template-areas: 
+    "contac formu";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contac{
+    grid-area: contac;
+  }
+  .formu{
+    grid-area: formu;
+  }
   .main__principal__contacto {
     height: 50vh;
     background-attachment: fixed;

@@ -14,40 +14,62 @@
     />
     <link rel="shourtcut icon" href="./img/faviconnuevo.png" />
     <link rel="stylesheet" href="./css/style.css" />
-    
+      <!-- CSS only -->
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     <title>Especialidades - Clinica Odontologica Vida</title>
     
   </head>
   <body>
-    
-    <header id="headermain"  class="main__header">
-      <a href="./index.html">
-        <img src="./img/logo-sinfondo.png" alt="logo" width="100" height="100" />
-      </a>
-      <!-- incio menu de navegacion -->
-      <nav >
-        
-        <ul class="main__header__nav">
-          <li>
-            <a  href="./index.html">HOME</a>
-          </li>
-          <li>
-            <a    href="./consultorio.html">CONSULTORIO</a>
-          </li>
-          <li>
-            <a   href="./especialidades.html">ESPECIALIDADES</a>
-            
-          </li>
-          <li>
-            <a   href="./nosotros.html">NOSOTROS</a>
-          </li>
-          <li>
-            <a  href="./contacto.html">CONTACTO</a>
-          </li>
-        </ul>
+      <!-- inicio nav bar -->
+      <nav class="navbar navbar-expand-lg" style="background-color: #d6d6d7">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"
+            ><img
+              src="./img/logo-sinfondogrande.png"
+              alt="logo"
+              width="180"
+              height="80"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-3 me-auto mb-2 mb-lg-0 m-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./consultorio.html">CONSULTORIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./especialidades.html"
+                  >ESPECIALIDADES</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-      <!-- fin menu de navegacion -->
-    </header>
+      <!-- fin nav bar -->
     <!-- inicio de whatsapp -->
     <div class="whatsapp">
       <a
@@ -66,115 +88,121 @@
         </div>
       </main>
       <!-- fin de parallax especialidades -->
+  <section class="especialidades__fondo">
 
       <!-- inicio de informacion de especialidades -->
-      <div class="our__specialty">
         <div class="especialidades__principal">
           <h2>ESPECIALIDADES</h2>
           <p class="especialidades__descripcion">Luego de una primera consulta de diagnóstico, el director y su equipo idean y desarrollan un tratamiento de atención personalizado. Dentro del Centro Odontológico, los pacientes son atendidos por profesionales altamente capacitados en su especialidad.</p>
         </div>
         <!-- fin de informacion de especialidades -->
-      <div class="especialidades__principal__p">
+<div class="informacion__especialidades">
       <!-- inicio especialidad ortodoncia -->
-        <form action="" id="ortodoncia"></form> <h3 class="titulo__especialidad">ORTODONCIA</h3>
-        <div class="especialidad__ort">
-      <p class="desc">La ortodoncia es una especialidad de la odontología encargada del estudio, prevención, diagnóstico y tratamiento de las anomalías de forma, posición, relación y función de las estructuras dentomaxilofaciales; siendo su ejercicio el arte de prevenir, diagnosticar y corregir sus posibles alteraciones y mantenerlas dentro de un estado óptimo de salud y armonía.
+      <form action="" id="ortodoncia"></form> <h3 class="titulo__especialidad">ORTODONCIA</h3>
+      <div class="especialidad__general">
+        <div class="especialidad__general__a">
+      <p>La ortodoncia es rama de la odontología que se encarga de corregir los defectos y las irregularidades de la posición dentaria.
     Los tratamientos de ortodoncia pueden ser realizados con aparatología fija (brackets), o removible, dependiendo del paciente, su edad y la patología para tratar.
 También existe la ortodoncia invisible, que a través de placas alinean los maxilares.
-Los tratamientos de ortodoncia NO son exclusivamente para niños; pueden realizarse a cualquier edad logrando excelentes resultados. Tienen como objetivo no solo mejorar la estética, sino también, y fundamentalmente, mejorar la función de los dientes, devolviendo la salud bucal.</p>
-    <div class="posicion__especilidad imge01">
-      <img class="our__medida__especialidad" src="./img/ortodoncia2.jpg" alt="ortodoncia" >
+Los tratamientos de ortodoncia NO son exclusivamente para niños; pueden realizarse a cualquier edad logrando excelentes resultados.</p>
+      <div>
+      <img class="imagen__general" src="./img/ortodonciaespecialidad.jpg" alt="ortodoncia" >
+      </div>
     </div>
-  </div>
+</div>
 <!-- fin especialidad ortodoncia -->
-
-<!-- inicio especialidad endodoncia -->
-<form action="" id="endodoncia"></form> <h3 class="titulo__especialidad">ENDODONCIA</h3>
-<div class="especialidad__endo">
-<p class="desc">También conocida como la especialidad en tratamiento de conductos, es el procedimiento que se utiliza para eliminar la pulpa del diente y sellar el conducto radicular.
-La causa más frecuente de la necesidad de realizar una endodoncia es la existencia de caries muy avanzadas o penetrantes. Aunque también hay otros factores menos habituales que pueden generar una pulpitis como traumatismos, abrasión, erosión o desgaste de los dientes.
-Con la endodoncia se retira la totalidad de la pulpa afectada, se sella el conducto radicular, dejando condiciones óptimas para restaurar la pieza dental. </p>
-<div class="posicion__especialidad imge02">
-  <img class="our__medida__especialidad" src="./img/endodoncia2.jpg" alt="endodoncia">
-</div>
-</div>
+<hr class="separador">
+      <!-- inicio especialidad endodoncia -->
+    <form action="" id="endodoncia"></form> <h3 class="titulo__especialidad">ENDODONCIA</h3>
+      <div class="especialidad__general">
+        <div class="especialidad__general__a">
+      <p>También conocida como la especialidad en tratamiento de conductos, es el procedimiento que se utiliza para eliminar la pulpa del diente y sellar el conducto radicular.
+      Con la endodoncia se retira la totalidad de la pulpa afectada, se sella el conducto radicular, dejando condiciones óptimas para restaurar la pieza dental. </p>
+      <div>
+        <img class="imagen__general" src="./img/endodoncia2especialidad.jpg" alt="endodoncia">
+      </div>
+        </div>
+      </div>
 <!-- fin especialidad endodoncia -->
-
+<hr class="separador">
 <!-- inicio especialidad cirugia -->
 <form action="" id="cirugia"></form><h3 class="titulo__especialidad">CIRUGÍA</h3>
-<div class="especialidad__ciru">
-<p class="desc">La Cirugía maxilofacial es la especialidad dedicada a tratar las patologías de los maxilares como extracción de terceros molares, fracturas dentarias, lesiones articulares, problemas de las glándulas salivales, eliminación de quistes y plásticas de tejidos duros y blandos.
-¿En qué casos se recurre a la cirugía oral?
-Las extracciones de terceros molares.
-  Liberación de pieza dentaria retenida para reubicarla en posición y lograr una correcta oclusión.
-  Un diente mal posicionado que genera daño a la pieza vecina.
-  Las apicectomías: la eliminación de una infección que afecta a la raíz de una pieza dental y a los tejidos adyacentes.
-  La detección del cáncer oral.
-  Cirugía plástica de tejidos duros o blandos.</p>
-  <div class="posicion__especialidad imge03">
-    <img class="our__medida__especialidad" src="./img/cirugia2.jpg" alt="cirugia" >
+<div class="especialidad__general">
+  <div class="especialidad__general__a">
+      <p>La Cirugía maxilofacial es la especialidad dedicada a tratar las patologías de los maxilares como extracción de terceros molares, fracturas dentarias, lesiones articulares, problemas de las glándulas salivales, eliminación de quistes y plásticas de tejidos duros y blandos.
+      ¿En qué casos se recurre a la cirugía oral? Extracciones de terceros molares, apicectomías, detección del cáncer oral y cirugía plástica de tejidos duros o blandos.</p>
+        <div>
+          <img class="imagen__general" src="./img/cirugia2especialidad.jpg" alt="cirugia" >
+        </div>
   </div>
 </div>
 <!-- fin especialidad cirugia -->
-
+<hr class="separador">
 <!-- inicio especialidad odontopediatria -->
 <form action="" id="odontopediatria"></form> <h3 class="titulo__especialidad">ODONTOPEDIATRÍA</h3>
-<div class="especialidad__odonto">
-<p class="desc">La educación como eje del cuidado de los niños.
-La odontopediatría u odontología pediátrica es la especialidad dentro de la odontología, definida por la edad, que brinda cuidado oral preventivo y terapéutico a niños y adolescentes.
-El odontopediatra es la persona capacitada para asistir a cada niño aplicando técnicas acordes a su edad y evolución dentaria, informando al niño y a sus padres sobre los cuidados necesarios en cuanto a higiene, asesoramiento dietario y hábitos beneficiosos para un correcto desarrollo.
-Se sugiere que la primera consulta con un odontopediatra sea a los 3 años de edad.</p>
-<div class="posicion__especialidad imge04">
-  <img class="our__medida__especialidad" src="./img/odontopediatria2.jpg" alt="odontopediatria" >
-</div>
+<div class="especialidad__general">
+  <div class="especialidad__general__a">
+    <p>La odontopediatría es la especialidad dentro de la odontología, definida por la edad, que brinda cuidado oral preventivo y terapéutico a niños y adolescentes.
+      El odontopediatra es la persona capacitada para asistir a cada niño aplicando técnicas acordes a su edad y evolución dentaria, informando al niño y a sus padres sobre los cuidados necesarios en cuanto a higiene, asesoramiento dietario y hábitos beneficiosos para un correcto desarrollo.
+      Se sugiere que la primera consulta con un odontopediatra sea a los 3 años de edad.</p>
+      <div>
+        <img class="imagen__general" src="./img/odontopediatria2especialidad.jpg" alt="odontopediatria" >
+      </div>
+  </div>
 </div>
 <!-- fin especialidad odontopediatria -->
-
-<!-- inicio especialidad endodoncia -->
+<hr class="separador">
+<!-- inicio especialidad periodoncia -->
 <form action="" id="periodoncia"></form> <h3 class="titulo__especialidad">PERIODONCIA</h3>
-<div class="especialidad__perio">
-<p class="desc">El cuidado de las encías y de los tejidos peridentarios.
-La Periodoncia es la especialidad de la odontología que se encarga de los tejidos que rodean a los dientes naturales, prótesis e implantes.
-La encía y la mucosa oral reflejan cualquier alteración de la salud bucal causada por diferentes factores (ej. placa bacteriana, alteraciones sistémicas) con sangrado o cambios en su forma o tamaño.
-El especialista se encarga de devolver la salud a través de la atención personalizada y la enseñanza de los cuidados a estos tejidos, para mantenerlos sanos a lo largo del tiempo y asegurar un tratamiento integral exitoso.
-</p>
-<div class="posicion__especialidad imge05">
-  <img class="our__medida__especialidad" src="./img/periodoncia2.jpg" alt="periodoncia" >
-</div>
+<div class="especialidad__general">
+  <div class="especialidad__general__a">
+    <p>La Periodoncia es la especialidad de la odontología que se encarga de los tejidos que rodean a los dientes naturales, prótesis e implantes.
+      La encía y la mucosa oral reflejan cualquier alteración de la salud bucal causada por diferentes factores (ej. placa bacteriana, alteraciones sistémicas) con sangrado o cambios en su forma o tamaño.
+      El especialista se encarga de devolver la salud a través de la atención personalizada y la enseñanza de los cuidados a estos tejidos.</p>
+      <div>
+        <img class="imagen__general" src="./img/periodoncia2especialidad.jpg" alt="periodoncia" >
+      </div>
+  </div>
 </div>
 <!-- fin de especialidad endodoncia -->
-
+<hr class="separador">
 <!-- inicio de especialidad blanqueamiento -->
 <form action="" id="blanqueamiento"></form> <h3 class="titulo__especialidad">BLANQUEAMIENTO</h3>
-<div class="especialidad__blanq">
-<p class="desc">El blanqueamiento dental es un procedimiento odontológico cosmético que se ofrece a aquellos pacientes que están disconformes con el color de sus dientes.
-Es un proceso no invasivo y conservador de la estructuras dentarias, que no provoca daño alguno al esmalte dentario.
-Consiste en la aplicación de un agente blanqueador, que mediante una luz fría de alta intensidad provoca la oxigenación del esmalte, logrando así el cambio de coloración.
-Puede realizarse tanto en la consulta como en el propio domicilio, siempre previa revisión y siguiendo las pautas recomendadas por el odontólogo. Ambos tipos de blanqueamiento dental pueden combinarse, para conseguir así el resultado deseado de manera más rápida.</p>
-<div class="posicion__especialidad imge06">
-  <img class="our__medida__especialidad" src="./img/blanqueamiento2.jpg" alt="blanqueamiento" >
-</div>
+<div class="especialidad__general">
+  <div class="especialidad__general__a">
+    <p>El blanqueamiento dental es un procedimiento odontológico cosmético que se ofrece a aquellos pacientes que están disconformes con el color de sus dientes.
+      Es un proceso no invasivo y conservador de la estructuras dentarias, que no provoca daño alguno al esmalte dentario.
+      Puede realizarse tanto en la consulta como en el propio domicilio.</p>
+      <div>
+        <img class="imagen__general" src="./img/blanqueamiento2especialidad.jpg" alt="blanqueamiento" >
+      </div>
+  </div>
 </div>
 <!-- fin de informacion de especialidades -->
-
-
 </div>
-
-</div>
-    </header>
-    <!-- inicio de footer -->
+  </section>
+    <!-- incio de footer -->
     <footer class="main__footer">
       <img src="./img/logo-sinfondo.png" alt="logo" width="150" height="150" />
-      <nav class="main__footer__sub">
-        <h4><p>¿Dónde encontrarnos?</p></h4>
-        <p>RECOLETA</p>
-        <p>Paraguay 2085</p>
-        <p>Buenos Aires - Argentina</p>
-        <p>WhatsApp: +54 9 11 5450-6078</p>
-        <h4><p>Horario de atención</p></h4>
-        <p>Lunes a Viernes de 9hs a 20hs</p>
-      </nav>
+      <img src="./img/logosfootersinfondo.png" alt="logo insta face whatsapp">
+      <div class="main__footer__sub">
+        <h4 class="main__footer__sub__titulo">¿Dónde encontrarnos?</h4>
+          <div class="main__footer__sub__info">
+            <p>RECOLETA</p>
+            <p>Paraguay 2085</p>
+            <p>Buenos Aires - Argentina</p>
+            <p>WhatsApp: +54 9 11 5450-6078</p>
+            <h4>Horario de atención</h4>
+            <p>Lunes a Viernes de 9hs a 20hs</p>
+          </div>
+      </div>
     </footer>
     <!-- fin de footer -->
+        <!-- JavaScript Bundle with Popper -->
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"
+      ></script>
   </body>
 </html>

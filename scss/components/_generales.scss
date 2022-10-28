@@ -22,32 +22,6 @@ ol {
 .navbar-expand-lg{
   width: 100vw;
 }
-.main__header {
-  background-color: rgb(219, 219, 219);
-  color: black;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.main__header__nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 15px 15px;
-}
-.main__header__nav li {
-  padding-left: 20px;
-}
-.main__header__nav a {
-  color: black;
-  font-size: 1rem;
-  font-weight: 500;
-}
-.main__header__nav a.active {
-  color: white;
-}
 h1{
   font-family: "Roboto Condensed" !important;
 }
@@ -67,25 +41,22 @@ h3{
 p{
   font-family: "Roboto Condensed" !important;
 }
-.main__footer {
-  display: flex;
-  flex-direction: column;
+.footer {
   background-color: rgb(219, 219, 219);
   border-color: rgb(98, 97, 97);
   border-style: solid;
   border-width: 4px 0px 0px 0px;
   width: 100vw;
-  align-items: flex-start;
 }
 .main__footer__sub{
-  color: black;
+  padding: 1rem;
   &__titulo{
     color: #193c67;
   }
-  &__info{
-    font-size: 1rem;
-    line-height: 1rem;
-  }
+}
+.footer__final{
+  text-align: center;
+  padding-bottom: 1rem;
 }
 @font-face {
   font-family: "Roboto Condensed";
@@ -119,15 +90,27 @@ p{
   h3 {
     font-size: 1.5rem;
   }
-  .main__footer {
+  .main__footer{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    padding: 0;
+    justify-content: center;
+    &__sub{
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
     }
+  }
   }
 @media (min-width: 992px) {
     .whatsapp {
         bottom: 40px;
         right: 40px;
       }
+    .main__footer{
+      padding: 2rem;
+      &__sub{
+        gap: 5rem;
+      }
+    }
+
 }

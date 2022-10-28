@@ -20,6 +20,7 @@
     color: black;
     margin-bottom: 10px;
     text-align: center;
+  }
     &__p {
       font-style: normal;
       font-size: 1.3rem;
@@ -29,7 +30,6 @@
       text-align: center;
       color: #193c67;
     }
-  }
 }
 // fin de parallax
 // inicio de info clinica
@@ -50,6 +50,14 @@
   margin-bottom: 2rem;
 }
 // fin de carousel
+@media (min-width: 768px){
+    // inicio info clinica
+  .consultorio{
+    padding: 4rem;
+    font-size: 1.3rem;
+  }
+    // fin de info consultorio
+}
 @media (min-width: 992px) {
   // inicio de parallax
   .main__principal__consultorio {
@@ -68,10 +76,5 @@
     }
   }
   // fin de parallax
-  // inicio info clinica
-  .consultorio{
-    padding: 4rem;
-    font-size: 1.5rem;
-  }
-  // fin de info consultorio
+
 }

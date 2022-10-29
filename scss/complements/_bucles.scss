@@ -1,0 +1,5 @@
+@for $e from 1 through 5 {
+    .padding-#{$e}{
+        padding: 1rem * $e;
+    }
+}

@@ -9007,3 +9007,18 @@ p {
     .main__principal__contacto__p {
       font-size: 4rem;
       line-height: 1; } }
+
+.padding-1 {
+  padding: 1rem; }
+
+.padding-2 {
+  padding: 2rem; }
+
+.padding-3 {
+  padding: 3rem; }
+
+.padding-4 {
+  padding: 4rem; }
+
+.padding-5 {
+  padding: 5rem; }

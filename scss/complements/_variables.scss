@@ -1,2 +1,11 @@
 // Include any default variable overrides here (though functions won't be available)
-$font-family-sans-serif:  "Roboto Condensed", Arial, Helvetica, sans-serif;
+$primary: #193c67 !default;
+$secondary: rgb(219, 219, 219) !default;
+$font-family-sans-serif: "Roboto Condensed", Arial, Helvetica, sans-serif;
+
+.shadowed {
+  box-shadow: 12px 9px 16px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 12px 9px 16px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 12px 9px 16px 2px rgba(0, 0, 0, 0.75);
+}
+

@@ -8,6 +8,7 @@
   align-items: center;
   height: 30vh;
   width: 100vw;
+  margin-top: 6rem;
   text-align: center;
   &__wrapper {
     display: flex;
@@ -34,7 +35,7 @@
     text-align: center;
     line-height: 2;
     text-align: center;
-    color: #193c67;
+    color: $primary;
   }
 }
 // fin de contenido principal
@@ -108,17 +109,18 @@
     margin-bottom: 2rem;
     margin-left: 1rem;
   }
-  .visitanos__img__tamaño {
+  &__img__tamaño {
+    @include box-shadow(1);
     width: 100%;
   }
-}
-.visitanos__titulo__turno {
-  background-color: rgb(219, 219, 219);
-  border: 1px solid black;
-  background-color: #d6d6d7;
-  border-radius: 20px;
-  padding: 10px 15px;
-  margin-left: 20px;
+  &__titulo__turno {
+    background-color: rgb(219, 219, 219);
+    border: 1px solid black;
+    background-color: #d6d6d7;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-left: 20px;
+  }
 }
 // fin de visitarnos
 @media (min-width: 768px) {
@@ -230,7 +232,7 @@
   }
   .img06 {
     grid-area: img06;
-  } 
+  }
   .our__medida {
     height: auto;
   }
@@ -248,7 +250,7 @@
   // fin de testimonios
   // inciio de visitanos
   .visitanos {
-    background-color: rgb(219, 219, 219);
+    background-color: $secondary;
     width: 100vw;
     &__index {
       margin-left: 30%;

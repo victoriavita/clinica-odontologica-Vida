@@ -8,6 +8,7 @@
   align-items: center;
   height: 30vh;
   width: 100vw;
+  margin-top: 6rem;
   text-align: center;
   &__consultorio__sub {
     font-family: "Roboto Condensed";
@@ -21,19 +22,19 @@
     margin-bottom: 10px;
     text-align: center;
   }
-    &__p {
-      font-style: normal;
-      font-size: 1.3rem;
-      font-family: "Roboto Condensed";
-      text-align: center;
-      line-height: 2;
-      text-align: center;
-      color: #193c67;
-    }
+  &__p {
+    font-style: normal;
+    font-size: 1.3rem;
+    font-family: "Roboto Condensed";
+    text-align: center;
+    line-height: 2;
+    text-align: center;
+    color: $primary;
+  }
 }
 // fin de parallax
 // inicio de info clinica
-.clinica{
+.clinica {
   background-color: rgb(219, 219, 219);
   width: 100vw;
 }
@@ -50,13 +51,24 @@
   margin-bottom: 2rem;
 }
 // fin de carousel
-@media (min-width: 768px){
-    // inicio info clinica
-  .consultorio{
+@media (min-width: 768px) {
+  // inicio de parallax
+  .main__principal__consultorio {
+    height: 30vh;
+    &__sub {
+      font-size: 1.4rem;
+    }
+    &__p {
+      font-size: 2rem;
+    }
+  }
+  // fin de parallax
+  // inicio info clinica
+  .consultorio {
     padding: 4rem;
     font-size: 1.3rem;
   }
-    // fin de info consultorio
+  // fin de info consultorio
 }
 @media (min-width: 992px) {
   // inicio de parallax
@@ -75,6 +87,4 @@
       line-height: 1;
     }
   }
-  // fin de parallax
-
 }

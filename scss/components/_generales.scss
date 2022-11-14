@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif !important;
 }
 html {
   color: black;
@@ -10,51 +9,50 @@ a {
   text-decoration: none !important;
   color: black !important;
 }
-ul,
-ol {
-  list-style: none;
-}
+
 .whatsapp {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  &__logo {
+    width: 80px;
+  }
 }
-.navbar-expand-lg{
+.logo__navbar {
+  width: 150px;
+}
+.navbar-expand-lg {
   width: 100vw;
 }
-h1{
-  font-family: "Roboto Condensed" !important;
-}
 h2 {
-  font-family: "Roboto Condensed" !important;
-  color: #193c67 !important;
+  color: $primary;
   font-size: 2rem !important;
   padding: 15px !important;
   text-align: center;
 }
-h3{
-    text-decoration: none;
-    color: black;
-    list-style-type: none;
-    text-decoration-line: none;
-}
-p{
-  font-family: "Roboto Condensed" !important;
+h3 {
+  text-decoration: none;
+  color: black;
+  list-style-type: none;
+  text-decoration-line: none;
 }
 .footer {
-  background-color: rgb(219, 219, 219);
+  background-color: $secondary;
   border-color: rgb(98, 97, 97);
   border-style: solid;
   border-width: 4px 0px 0px 0px;
   width: 100vw;
 }
-.main__footer__sub{
+.logo__footer {
+  width: 150px;
+}
+.main__footer__sub {
   padding: 1rem;
-  &__titulo{
-    color: #193c67;
+  &__titulo {
+    color: $primary;
   }
 }
-.footer__final{
+.footer__final {
   text-align: center;
   padding-bottom: 1rem;
 }
@@ -90,27 +88,32 @@ p{
   h3 {
     font-size: 1.5rem;
   }
-  .main__footer{
+  .main__footer {
     display: flex;
     padding: 0;
     justify-content: center;
-    &__sub{
+    &__sub {
       display: flex;
       flex-direction: row;
       gap: 1rem;
     }
   }
-  }
+}
 @media (min-width: 992px) {
-    .whatsapp {
-        bottom: 40px;
-        right: 40px;
-      }
-    .main__footer{
-      padding: 2rem;
-      &__sub{
-        gap: 5rem;
-      }
+  .whatsapp {
+    bottom: 40px;
+    right: 40px;
+  }
+  .logo__navbar {
+    width: 200px;
+  }
+  .main__footer {
+    padding: 2rem;
+    &__sub {
+      gap: 5rem;
     }
-
+  }
+  .logo__footer {
+    width: 200px;
+  }
 }

@@ -8,6 +8,7 @@
   align-items: center;
   height: 30vh;
   width: 100vw;
+  margin-top: 6rem;
   text-align: center;
   &__sub {
     font-family: "Roboto Condensed";
@@ -17,7 +18,7 @@
     letter-spacing: 0.2em;
     line-height: 1.1em;
     text-transform: none;
-    color: black;
+    color: white;
     margin-bottom: 10px;
     text-align: center;
   }
@@ -28,26 +29,26 @@
     text-align: center;
     line-height: 2;
     text-align: center;
-    color: #193c67;
+    color: $primary;
   }
 }
 // fin de parallax
 // inicio de contacto
-.fondo__contacto{
-  background-color:  rgb(219, 219, 219);
+.fondo__contacto {
+  background-color: rgb(219, 219, 219);
   width: 100vw;
 }
 // inicio de info contacto y formulario
-.contacto{
+.contacto {
   display: flex;
-  &__datos{
+  &__datos {
     display: flex;
     flex-direction: column;
     margin: 2.5rem;
   }
-}
-.contacto__sub {
-  text-align: left;
+  &__sub {
+    text-align: left;
+  }
 }
 // fin de info contacto y formulario
 // inicio de maps
@@ -56,23 +57,32 @@
 }
 // fin de maps
 @media (min-width: 768px) {
+  // inicio de parallax
+  .main__principal__contacto {
+    height: 30vh;
+    &__sub {
+      font-size: 1.4rem;
+    }
+    &__p {
+      font-size: 2rem;
+    }
+  }
   // inicio de info contacto y formulario
-  .contacto{
+  .contacto {
     display: grid;
-    &__datos{
+    &__datos {
       display: grid;
-      grid-template-areas:
-      "contac formu";
+      grid-template-areas: "contac formu";
       grid-template-rows: 1fr;
       grid-template-columns: 1fr 1fr;
       align-items: center;
       margin: 5rem;
     }
   }
-  .contac{
+  .contac {
     grid-area: contac;
   }
-  .formu{
+  .formu {
     grid-area: formu;
   }
   // fin de info contacto y formulario

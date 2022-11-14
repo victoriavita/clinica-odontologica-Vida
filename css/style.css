@@ -8880,7 +8880,7 @@ h3, .h3 {
     letter-spacing: 0.2em;
     line-height: 1.1em;
     text-transform: none;
-    color: black;
+    color: white;
     margin-bottom: 10px;
     text-align: center; }
   .main__principal__nosotros__p {
@@ -8931,6 +8931,7 @@ h3, .h3 {
     height: 50vh;
     background-attachment: fixed; }
     .main__principal__nosotros__sub {
+      color: black;
       font-weight: 400;
       font-size: 2rem;
       letter-spacing: 0.34em;

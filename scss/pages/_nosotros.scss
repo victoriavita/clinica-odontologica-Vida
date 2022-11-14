@@ -18,7 +18,7 @@
     letter-spacing: 0.2em;
     line-height: 1.1em;
     text-transform: none;
-    color: black;
+    color: white;
     margin-bottom: 10px;
     text-align: center;
   }
@@ -91,6 +91,7 @@
     height: 50vh;
     background-attachment: fixed;
     &__sub {
+      color: black;
       font-weight: 400;
       font-size: 2rem;
       letter-spacing: 0.34em;
